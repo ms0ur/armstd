@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Montserrat{
+  &500{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+  }
+  &400{
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+  }
+}
+
+.Rubik{
+  &500{
+    font-family: "Rubik", serif;
+    font-weight: 500;
+  }
+  &400{
+    font-family: "Rubik", serif;
+    font-weight: 400;
+  }
+}

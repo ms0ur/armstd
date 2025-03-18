@@ -1,0 +1,22 @@
+.item{
+  color: #253D3F;
+  padding: 8px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    background: #ECECEC;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+.itemDark{
+  color: #FFF;
+  padding: 8px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    background: #008F9B;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
