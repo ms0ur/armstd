@@ -1,0 +1,14 @@
+.tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    &Active{
+        background: #BDE0E3;
+        color: #253D3F;
+    }
+    &Nonactive{
+        border: 1px dashed #BDE0E3;
+    }
+}
