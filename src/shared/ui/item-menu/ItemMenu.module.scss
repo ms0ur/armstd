@@ -2,10 +2,11 @@
   color: #253D3F;
   padding: 8px;
   transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
   cursor: pointer;
   &:hover{
     background: #ECECEC;
-    border-radius: 10px;
+
     transition: background-color 0.3s ease-in-out;
   }
 }
@@ -13,10 +14,11 @@
   color: #FFF;
   padding: 8px;
   transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
   cursor: pointer;
   &:hover{
     background: #008F9B;
-    border-radius: 10px;
+
     transition: background-color 0.3s ease-in-out;
   }
 }

@@ -7,8 +7,11 @@
     &Active{
         background: #BDE0E3;
         color: #253D3F;
+        text-decoration: none;
     }
     &Nonactive{
         border: 1px dashed #BDE0E3;
+        color: #253D3F;
+        text-decoration: none;
     }
 }

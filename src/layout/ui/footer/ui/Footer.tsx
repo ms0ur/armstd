@@ -57,6 +57,7 @@ export const Footer: FC = () => {
                     </p>
                     <p className={styles.moreInfoText}><a className={styles.link} href="https://zvezdaweekly.ru/about/pravo-zw">Правила использования материалов ОАО «ТРК ВС РФ «ЗВЕЗДА».</a></p>
                 </div>
+                <p className={styles.moreInfoText}>© ОАО «ТРК ВС РФ «ЗВЕЗДА»</p>
             </div>
         </div>
     );
