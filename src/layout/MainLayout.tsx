@@ -9,8 +9,11 @@ interface IProps {
 export const MainLayout: FC<IProps> = memo(function MainLayout({ children }) {
     return (
         <div className={styles.MainLayout}>
-            <Header />
-            {children}
+            <div className={styles.ContentLayout}>
+                <Header />
+                <div className={styles.line}></div>
+                {children}
+            </div>
             <Footer />
         </div>
     );

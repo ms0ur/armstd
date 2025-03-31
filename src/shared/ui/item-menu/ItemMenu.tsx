@@ -1,13 +1,15 @@
 import styles from './ItemMenu.module.scss';
-import { FC } from 'react';
+import {FC} from 'react';
+import Link from "next/link";
 
 interface ItemMenuProps {
     name: string,
-    type: 'dark' | 'light'
+    type: 'dark' | 'light',
+    href: string
 }
 
-export const ItemMenu: FC<ItemMenuProps> = ({ name, type }) => {
+export const ItemMenu: FC<ItemMenuProps> = ({ name, type, href}) => {
     return (
-        <div className={type === 'dark' ? styles.item : styles.itemDark}>{name}</div>
+        <Link href={href} className={type === 'dark' ? styles.item : styles.itemDark}>{name}</Link>
     );
 }

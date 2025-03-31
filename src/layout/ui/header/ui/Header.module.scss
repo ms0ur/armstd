@@ -6,7 +6,6 @@
   align-items: center;
   gap: 10px;
   background-color: #F7F7F7;
-  padding: 25px 40px;
 }
 
 .content{
@@ -18,12 +17,6 @@
   &Search{
     width: 448px;
     align-self: end;
-    input{
-      width: 418px;
-      padding: 15px;
-      border-radius: 10px;
-      border: transparent 0;
-    }
   }
   &Menu{
     display: flex;

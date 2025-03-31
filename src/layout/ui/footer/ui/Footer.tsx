@@ -3,6 +3,7 @@ import React, { FC, useState } from 'react';
 import styles from './Footer.module.scss';
 import moreInfo from '@/assets/image/icons/moreInfo.svg';
 import { ItemMenu } from "@/shared/ui/item-menu/ItemMenu";
+import Image from "next/image";
 
 export const Footer: FC = () => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -18,12 +19,12 @@ export const Footer: FC = () => {
                         <input type="text" className={styles.contentSearchContainer} placeholder="Поиск..."/>
                     </div>
                     <div className={styles.contentMenu}>
-                        <ItemMenu name={"Главная"} type={'light'} />
-                        <ItemMenu name={"Война и мир"} type={'light'} />
-                        <ItemMenu name={"Точное попадание"} type={'light'} />
-                        <ItemMenu name={"Вежливые люди"} type={'light'} />
-                        <ItemMenu name={"Вольно!"} type={'light'} />
-                        <ItemMenu name={"Вещмешок"} type={'light'} />
+                        <ItemMenu href={''} name={"Главная"} type={'light'} />
+                        <ItemMenu href={''} name={"Война и мир"} type={'light'} />
+                        <ItemMenu href={''} name={"Точное попадание"} type={'light'} />
+                        <ItemMenu href={''} name={"Вежливые люди"} type={'light'} />
+                        <ItemMenu href={''} name={"Вольно!"} type={'light'} />
+                        <ItemMenu href={''} name={"Вещмешок"} type={'light'} />
                     </div>
                 </div>
             </div>
@@ -34,7 +35,7 @@ export const Footer: FC = () => {
                     onClick={() => setIsExpanded(!isExpanded)}
                 >
                     Подробная информация
-                    <img
+                    <Image
                         className={`${styles.moreInfoImage} ${isExpanded ? styles.rotated : ''}`}
                         src={moreInfo}
                         alt=""

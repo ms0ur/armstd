@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styles from './Header.module.scss';
 import {ItemMenu} from "@/shared/ui/item-menu/ItemMenu";
+import {SearchBar} from "@/widgets/ui/search-bar/SearchBar";
 
 export const Header: FC = () => {
     return (
@@ -10,15 +11,15 @@ export const Header: FC = () => {
             </div>
             <div className={styles.content}>
                 <div className={styles.contentSearch}>
-                    <input type="text" className={styles.contentSearchContainer} placeholder="Поиск..."/>
+                    <SearchBar />
                 </div>
                 <div className={styles.contentMenu}>
-                    <ItemMenu name={"Главная"} type={'dark'} />
-                    <ItemMenu name={"Война и мир"} type={'dark'} />
-                    <ItemMenu name={"Точное попадаение"} type={'dark'} />
-                    <ItemMenu name={"Вежливые люди"} type={'dark'} />
-                    <ItemMenu name={"Вольно!"} type={'dark'} />
-                    <ItemMenu name={"Вещмешок"} type={'dark'} />
+                    <ItemMenu href={''} name={"Главная"} type={'dark'} />
+                    <ItemMenu href={''} name={"Война и мир"} type={'dark'} />
+                    <ItemMenu href={''} name={"Точное попадаение"} type={'dark'} />
+                    <ItemMenu href={''} name={"Вежливые люди"} type={'dark'} />
+                    <ItemMenu href={''} name={"Вольно!"} type={'dark'} />
+                    <ItemMenu href={''} name={"Вещмешок"} type={'dark'} />
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@ export const NewsArticleLG: FC<NewsArticleLGProps> = ({image, rubric, rubric_lin
     return (
         <div className={styles.article}>
             <div className={styles.articleImage}>
-                <Image src={image} width={'100'} height={'100'} alt=""/>
+                <Image src={image} width={'1900'} height={'1200'} alt=""/>
             </div>
             <div className={styles.content}>
                 <div className={styles.contentInfo}>
